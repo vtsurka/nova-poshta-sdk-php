@@ -1,18 +1,18 @@
 <?php
 
-namespace NovaPoshta\MethodParameters;
+namespace NovaPoshta\GetMethods;
 
 /**
- * Параметры метода getDocument модели InternetDocument
+ * Параметры метода getScanSheet модели ScanSheet
  *
- * Class InternetDocument_documentsTracking
+ * Class ScanSheet_getScanSheet
  * @package NovaPoshta\DataMethods
  * @property string Ref
  */
-class InternetDocument_getDocument extends MethodParameters
+class ScanSheet_getScanSheet extends MethodParameters
 {
     /**
-     * Устанавливает реф документа
+     * Устанавливает реф
      *
      * @param string $value
      * @return $this
@@ -24,7 +24,7 @@ class InternetDocument_getDocument extends MethodParameters
     }
 
     /**
-     * Получить реф документа
+     * Возвращает реф
      *
      * @return string
      */

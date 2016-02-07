@@ -1,21 +1,41 @@
 <?php
 
-namespace NovaPoshta\MethodParameters;
+namespace NovaPoshta\GetMethods;
 
 /**
- * Параметры метода getDocumentPrice модели InternetDocument
+ * Параметры метода getDocumentDeliveryDate модели InternetDocument
  *
- * Class InternetDocument_documentsTracking
+ * Class InternetDocument_getDocumentDeliveryDate
  * @package NovaPoshta\DataMethods
+ * @property string DateTime
  * @property string CitySender
  * @property string CityRecipient
  * @property string ServiceType
- * @property float  Weight
- * @property float  Cost
- * @property string DateTime
  */
-class InternetDocument_getDocumentPrice extends MethodParameters
+class InternetDocument_getDocumentDeliveryDate extends MethodParameters
 {
+    /**
+     * Устанавливает дату
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setDateTime($value)
+    {
+        $this->DateTime = $value;
+        return $this;
+    }
+
+    /**
+     * Получить дату
+     *
+     * @return string
+     */
+    public function getDateTime()
+    {
+        return $this->DateTime;
+    }
+
     /**
      * Устанавливает реф города отправителя
      *
@@ -80,71 +100,5 @@ class InternetDocument_getDocumentPrice extends MethodParameters
     public function getServiceType()
     {
         return $this->ServiceType;
-    }
-
-    /**
-     * Устанавливает вес
-     *
-     * @param float $value
-     * @return $this
-     */
-    public function setWeight($value)
-    {
-        $this->Weight = $value;
-        return $this;
-    }
-
-    /**
-     * Получить вес
-     *
-     * @return float
-     */
-    public function getWeight()
-    {
-        return $this->Weight;
-    }
-
-    /**
-     * Устанавливает цену
-     *
-     * @param float $value
-     * @return $this
-     */
-    public function setCost($value)
-    {
-        $this->Cost = $value;
-        return $this;
-    }
-
-    /**
-     * Получить цену
-     *
-     * @return float
-     */
-    public function getCost()
-    {
-        return $this->Cost;
-    }
-
-    /**
-     * Устанавливает дату
-     *
-     * @param string $value
-     * @return $this
-     */
-    public function setDateTime($value)
-    {
-        $this->DateTime = $value;
-        return $this;
-    }
-
-    /**
-     * Получить дату
-     *
-     * @return string
-     */
-    public function getDateTime()
-    {
-        return $this->DateTime;
     }
 }

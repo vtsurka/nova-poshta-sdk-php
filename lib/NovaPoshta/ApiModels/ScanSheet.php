@@ -4,7 +4,7 @@ namespace NovaPoshta\ApiModels;
 
 use NovaPoshta\Config;
 use NovaPoshta\Core\ApiModel;
-use NovaPoshta\MethodParameters\MethodParameters;
+use NovaPoshta\GetMethods\MethodParameters;
 use stdClass;
 
 

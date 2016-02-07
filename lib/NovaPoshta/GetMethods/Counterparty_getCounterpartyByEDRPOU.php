@@ -1,6 +1,6 @@
 <?php
 
-namespace NovaPoshta\MethodParameters;
+namespace NovaPoshta\GetMethods;
 
 /**
  * Параметры метода getCounterpartyByEDRPOU модели Counterparty

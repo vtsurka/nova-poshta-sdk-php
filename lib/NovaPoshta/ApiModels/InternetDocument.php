@@ -8,7 +8,7 @@ use NovaPoshta\Models\OptionsSeat;
 use NovaPoshta\Core\ApiModel;
 use NovaPoshta\Models\CounterpartyContact;
 use NovaPoshta\Config;
-use NovaPoshta\MethodParameters\MethodParameters;
+use NovaPoshta\GetMethods\MethodParameters;
 use stdClass;
 
 /**

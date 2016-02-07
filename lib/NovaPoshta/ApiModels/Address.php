@@ -3,7 +3,7 @@
 namespace NovaPoshta\ApiModels;
 
 use NovaPoshta\Core\ApiModel;
-use NovaPoshta\MethodParameters\MethodParameters;
+use NovaPoshta\GetMethods\MethodParameters;
 
 /**
  * Модель для работы с адресами

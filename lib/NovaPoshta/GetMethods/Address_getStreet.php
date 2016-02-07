@@ -1,16 +1,17 @@
 <?php
 
-namespace NovaPoshta\MethodParameters;
+namespace NovaPoshta\GetMethods;
 
 /**
- * Параметры метода getWarehouses модели Address
+ * Параметры метода getStreet модели Address
  *
  * Class Address_getStreet
  * @package NovaPoshta\DataMethods
  * @property string CityRef
- * @property string Page
+ * @property int    Page
+ * @property string FindByString
  */
-class Address_getWarehouses extends MethodParameters
+class Address_getStreet extends MethodParameters
 {
     /**
      * Устанавливает реф города
@@ -37,7 +38,7 @@ class Address_getWarehouses extends MethodParameters
     /**
      * Устанавливает страницу
      *
-     * @param string $value
+     * @param int $value
      * @return $this
      */
     public function setPage($value)
@@ -49,10 +50,32 @@ class Address_getWarehouses extends MethodParameters
     /**
      * Возвращает страницу
      *
-     * @return string
+     * @return int
      */
     public function getPage()
     {
         return $this->Page;
+    }
+
+    /**
+     * Устанавливает строку для поиска улицы
+     *
+     * @param string $value
+     * @return $this
+     */
+    public function setFindByString($value)
+    {
+        $this->FindByString = $value;
+        return $this;
+    }
+
+    /**
+     * Возвращает строку для поиска улицы
+     *
+     * @return string
+     */
+    public function getFindByString()
+    {
+        return $this->FindByString;
     }
 }
